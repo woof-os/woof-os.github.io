@@ -15,10 +15,10 @@ export default function Hero() {
                     initial={{ opacity: 0, x: -100 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
                     transition={transition}
-                >WOOF</motion.div><motion.div
+                >WOOF os</motion.div><motion.div
                     initial={{ opacity: 0, x: 100 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
                     transition={{ ...transition, delay: 0.5 }}
-                >os</motion.div></h1>
+                >(wip)</motion.div></h1>
             </div></div></div>;
 }
