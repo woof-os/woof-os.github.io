@@ -1,6 +1,21 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Keybinds() {
-    return <article className="prose max-w-none prose-slate prose-invert md:px-12">
+    const [ref, inView] = useInView();
+    const transition = { duration: 0.5 }
+    const variants = {
+        hidden: { opacity: 0, x: -30 },
+        visible: { opacity: 1, x: 0 }
+    }
+
+    return <motion.article
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={variants}
+        transition={transition}
+        ref={ref}
+        className="prose max-w-none prose-slate prose-invert md:px-12">
         <h1>Keybinds for Woof OS</h1>
         <p>Woof OS uses a tiling window manager, qtile, mainly controlled using the keyboard.<br /> The keybinds listed here are declared in <code>~/.config/qtile/config.py</code>.</p>
         By default, <kbd>[mod]</kbd> is the <kbd>Super</kbd>/<kbd>mod4</kbd> key, which is the <kbd>⊞ Win</kbd> key on most keyboards, and the <kbd>⌘ Command</kbd> key on Macs.
@@ -59,5 +74,5 @@ export default function Keybinds() {
                 <li><kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>Q</kbd> shuts down Qtile</li>
             </ul>
         </div>
-    </article>
+    </motion.article>
 }
