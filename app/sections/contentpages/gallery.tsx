@@ -38,7 +38,7 @@ export default function Gallery() {
                 duration: 1,
             }}
             className="h-full w-full flex justify-center items-center">
-            <img src={mainImage} className="h-full w-full" />
+            <Image src={mainImage} className="h-full w-full" alt="main image" width={1920} height={1080} />
         </motion.div>
         <div className="w-full grid md:grid-cols-2 gap-2 mt-2">
             {
