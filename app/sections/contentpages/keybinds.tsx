@@ -56,7 +56,7 @@ export default function Keybinds() {
                 <li><kbd>[mod]</kbd> <kbd>D</kbd> sends a notification including the current date and time</li>
                 <li><kbd>[mod]</kbd> <kbd>Q</kbd> kills focused window</li>
                 <li><kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>R</kbd> restarts Qtile</li>
-                <li><kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>Q</kbd> shutdown Qtile</li>
+                <li><kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>Q</kbd> shuts down Qtile</li>
             </ul>
         </div>
     </article>
