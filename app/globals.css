@@ -10,4 +10,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  kbd {
+    font-family: monospace !important;
+  }
 }

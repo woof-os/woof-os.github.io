@@ -24,7 +24,7 @@ export default function Gallery() {
             duration: 1,
         }}
         ref={ref}
-        className="p-12 h-full w-full">
+        className="h-full w-full">
         <motion.div
 
             initial="hidden"

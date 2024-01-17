@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import {  Inter } from 'next/font/google'
+import { IBM_Plex_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
+const ibm_plex_sans = IBM_Plex_Sans({
   subsets: ['latin'],
+  weight: ['400'],
 })
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ibm_plex_sans.className}>{children}</body>
     </html>
   )
 }
