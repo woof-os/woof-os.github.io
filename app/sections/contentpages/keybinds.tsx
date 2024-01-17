@@ -16,7 +16,7 @@ export default function Keybinds() {
                 <p>
                     The mouse can also be used to switch focus between windows by simply hovering over them.
                 </p>
-                <li><kbd>[mod]</kbd> <span>{Array.from(Array(9).keys()).map((i) => { return <span><kbd key={i}>{i + 1}</kbd>{i != 8 && "/"}</span> })}
+                <li><kbd>[mod]</kbd> <span>{Array.from(Array(9).keys()).map((i) => { return <span key={i}><kbd>{i + 1}</kbd>{i != 8 && "/"}</span> })}
                 </span> moves focus to the workspace assigned to the ID</li>
             </ul>
 
