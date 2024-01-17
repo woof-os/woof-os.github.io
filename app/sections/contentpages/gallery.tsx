@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import Image from "next/image";
 
 export default function Gallery() {
     const [ref, inView] = useInView();
@@ -42,7 +43,7 @@ export default function Gallery() {
         <div className="w-full grid md:grid-cols-2 gap-2 mt-2">
             {
                 images.map((image, index) => {
-                    return <Image src={image} key={index} />
+                    return <CustImage src={image} key={index} />
                 }
                 )
             }
@@ -50,7 +51,7 @@ export default function Gallery() {
     </motion.div>
 }
 
-function Image({ src }: { src: string }) {
+function CustImage({ src }: { src: string }) {
 
     const [ref, inView] = useInView();
     const variants = {
@@ -67,7 +68,7 @@ function Image({ src }: { src: string }) {
             duration: 1,
         }}
         className="h-full w-full flex justify-center items-center">
-        <img src={src} className="h-full w-full" />
+        <Image src={src} alt="screenshot" className="h-full w-full" width={1920} height={1080} />
     </motion.div>
 }
 
