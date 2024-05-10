@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Image from "next/image";
+import Donation from "@/app/components/donation";
 
 export default function Gallery() {
     const [ref, inView] = useInView();
@@ -47,6 +48,9 @@ export default function Gallery() {
                 }
                 )
             }
+        </div>
+        <div className="prose max-w-none prose-slate prose-invert">
+            <Donation />
         </div>
     </motion.div>
 }

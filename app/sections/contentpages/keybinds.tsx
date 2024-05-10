@@ -1,3 +1,4 @@
+import Donation from "@/app/components/donation";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -74,5 +75,6 @@ export default function Keybinds() {
                 <li><kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>Q</kbd> shuts down Qtile</li>
             </ul>
         </div>
+        <Donation />
     </motion.article>
 }
