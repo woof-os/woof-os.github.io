@@ -22,7 +22,7 @@ export default function Home() {
         © 2023 ACuteWoof. All Rights Reserved.
       </span>
       <span className="flex gap-6">
-        <Link href='https://acutewoof.is-a.dev' target="_blank" className="hover:text-white">
+        <Link href='https://lewoof.xyz' target="_blank" className="hover:text-white">
           ACuteWoof
         </Link>
         <Link href='https://github.com/woof-os' target="_blank" className="hover:text-white">
