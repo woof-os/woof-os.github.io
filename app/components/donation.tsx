@@ -5,9 +5,9 @@ function Donation() {
         <div>
             <hr />
             <h2>Donate</h2>
-            <p className="text-wrap break-all">
+            <p> 
                 <strong>Monero: </strong>
-                88Ftpu3ncRyLv7Z2c14b9L4MsyWscEqLBJhENxviYtmtRfidDx6G9y3Xyd8aYF8NRV2c2dF5QZiyTfHwuWLH9qmsSpskLhj
+                <p className="text-wrap break-all">88Ftpu3ncRyLv7Z2c14b9L4MsyWscEqLBJhENxviYtmtRfidDx6G9y3Xyd8aYF8NRV2c2dF5QZiyTfHwuWLH9qmsSpskLhj</p>
             </p>
             <p>
                 <strong>BuyMeACoffee: </strong>
