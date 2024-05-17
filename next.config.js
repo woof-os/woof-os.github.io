@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  distDir: "out",
   images: {
     remotePatterns: [
+      unoptimized: true,
       {
         protocol: "https",
         hostname: "raw.githubusercontent.com",
