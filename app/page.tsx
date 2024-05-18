@@ -19,7 +19,7 @@ export default function Home() {
     <Content page={page} setPage={setPage} />
     <footer className={'p-4 md:flex md:items-center md:justify-between text-slate-400 md:p-6 text-sm ' + IBMPlexMono.className}>
       <span className='sm:text-center'>
-        © 2023 ACuteWoof. All Rights Reserved.
+        © 2023-2024 ACuteWoof. All Rights Reserved.
       </span>
       <span className="flex gap-6">
         <Link href='https://lewoof.xyz' target="_blank" className="hover:text-white">
