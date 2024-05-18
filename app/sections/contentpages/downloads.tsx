@@ -18,14 +18,13 @@ export default function Downloads() {
         transition={transition}
         ref={ref}
         className="prose max-w-none prose-slate prose-invert md:px-12">
-        <h1>Where are the downloads?</h1>
-        <p>{"Well, it's been a while since I've started this project, and the team is no longer active. However, I'll try my best to keep Woof OS, as a project, running and alive. So, where are the downloads? They're not here yet as I'm still working on Woof OS' installer as Calamares (with all due respect) has been a pain in the ass to maintain Woof OS with. Once the project is complete, downloads will be available here."}
-        </p>
-        <p>
-            Sincerely,
-            <br />
-            <Link href="https://lewoof.xyz" target="_blank">Vithushan (ACuteWoof)</Link>
-        </p>
+        <h1>Download Woof OS Qtile Edition</h1>
+	
+	<span className="flex flex-col gap-2 md:flex-row md:gap-12">
+<span><h4>LeWoof Mirror</h4> <Link href="https://dl.os.lewoof.xyz/woofos-x86_64.iso" target="_blank">Latest release</Link> <br /> <Link href="https://dl.os.lewoof.xyz/">Browse downloads</Link></span><span>
+           <h4>Github Mirror</h4> <Link href="https://github.com/woof-os/isos-qtile/releases/latest/download/woofos.iso" target="_blank">Latest release</Link> <br/> <Link href="https://github.com/woof-os/isos-qtile/releases">Browse downloads</Link></span>
+	    
+	    </span>
         <Donation />
     </motion.article>
 }
