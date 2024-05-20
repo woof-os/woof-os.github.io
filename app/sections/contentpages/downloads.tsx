@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Donation from "../../components/donation";
 
 export default function Downloads() {
     const [ref, inView] = useInView();
@@ -19,7 +18,6 @@ export default function Downloads() {
         ref={ref}
         className="prose max-w-none prose-slate prose-invert md:px-12">
         <h1>Download Woof OS Qtile Edition</h1>
-
         <span className="flex flex-col gap-2 md:flex-row md:gap-12">
             <span>
                 <h4>LeWoof Mirror</h4>
@@ -34,6 +32,5 @@ export default function Downloads() {
                 <Link href="https://github.com/woof-os/isos-qtile/releases">Browse downloads</Link>
             </span>
         </span>
-        <Donation />
     </motion.article>
 }

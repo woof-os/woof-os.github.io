@@ -1,4 +1,5 @@
 "use client"
-import Gallery from "./sections/contentpages/gallery"
 
-export default Gallery
+import Home from "./sections/contentpages/home"
+
+export default Home
