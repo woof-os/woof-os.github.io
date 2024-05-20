@@ -1,8 +1,10 @@
-import Button from "./button";
+"use client"
+
+import Link from "next/link";
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
 
-export default function Header({ setPage }: { setPage: (page: number) => void }) {
+export default function Header() {
 
     const [ref, inView] = useInView();
     const transition = { duration: 0.5 }
@@ -26,19 +28,19 @@ export default function Header({ setPage }: { setPage: (page: number) => void })
                 animate={inView ? "visible" : "hidden"}
                 variants={variants[0]}
                 transition={transition}
-            ><NavOption onClick={() => { setPage(0) }}>Gallery</NavOption></motion.span>
+            ><Link href="/">Gallery</Link></motion.span>
             <motion.span
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 variants={variants[1]}
                 transition={transition}
-            ><NavOption onClick={() => { setPage(1) }}>Downloads</NavOption></motion.span>
+            ><Link href="/downloads">Downloads</Link></motion.span>
             <motion.span
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 variants={variants[2]}
                 transition={transition}
-            ><NavOption onClick={() => { setPage(2) }}>Keybinds</NavOption></motion.span>
+            ><Link href="keybinds">Keybinds</Link></motion.span>
         </motion.div>
     </div>
 }

@@ -64,6 +64,7 @@ export default function Keybinds() {
             <ul>
                 <li><kbd>[mod]</kbd> <kbd>Return</kbd> launches the terminal (alacritty)</li>
                 <li><kbd>[mod]</kbd> <kbd>R</kbd> opens the Rofi run launcher</li>
+                <li><kbd>[mod]</kbd> <kbd>P</kbd> opens the Rofi power menu</li>
                 <li><kbd>[mod]</kbd> <kbd>B</kbd> launches the web browser (brave)</li>
                 <li><kbd>[mod]</kbd> <kbd>C</kbd> launches the file manager (vifm)</li>
                 <li><kbd>[mod]</kbd> <kbd>Z</kbd> opens copied PDF URL in Zathura</li>
