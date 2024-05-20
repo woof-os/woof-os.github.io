@@ -29,7 +29,7 @@ export default function Home() {
 
             <h2>Editions</h2>
             <p>
-                The XFCE4 edition is no longer available and Woof OS is now only available in the Qtile edition. If you would like to contribute to project for me to release more editions, you can <Link href="#contact">get in touch with me</Link>, or <Link href="#donate">donate</Link> to the project (information at the bottom of the page).
+                The XFCE4 edition is no longer available and Woof OS is now only available in the Qtile edition. If you would like to contribute to the project for me to release more editions, you can <Link href="#contact">get in touch with me</Link>, or <Link href="#donate">donate</Link> to the project (information at the bottom of the page).
             </p>
             <h2>Information about Qtile edition</h2>
             <ul>
