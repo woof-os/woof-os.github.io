@@ -28,10 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={IBMPlexMono.className}>
-        <main className="min-h-screen bg-slate-950 overflow-x-hidden">
+      <body className={"hero-bg-image " + IBMPlexMono.className}>
+        <main className="min-h-screen overflow-x-hidden">
           <Hero />
-          <div className="w-full flex flex-col gap-12 items-center pt-12 pb-12">
+          <div className="w-full flex flex-col gap-12 items-center pt-12 pb-12 bg-slate-950 md:bg-transparent md:bg-gradient-to-b md:from-slate-950/50 md:via-slate-950 md:to-slate-950">
             <div className="w-full max-w-screen-2xl flex-grow lg:bg-slate-900 text-slate-200">
               <Header />
               <div className={"w-full p-4 lg:p-12 " + IBMPlexSerif.className}>
@@ -40,9 +40,9 @@ export default function RootLayout({
             </div>
             <ArticleFooter />
           </div>
-          <footer className={'p-4 md:flex md:items-center md:justify-between text-slate-400 md:p-6 text-sm ' + IBMPlexMono.className}>
+          <footer className={'bg-slate-950 p-4 md:flex md:items-center md:justify-between text-slate-400 md:p-6 text-sm ' + IBMPlexMono.className}>
             <span className='sm:text-center'>
-              © 2023-2024 ACuteWoof. All Rights Reserved.
+              © 2023-2024 Vithushan. All Rights Reserved.
             </span>
             <span className="flex gap-6">
               <Link href='https://lewoof.xyz' target="_blank" className="hover:text-white">
