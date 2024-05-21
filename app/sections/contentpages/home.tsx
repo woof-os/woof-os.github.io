@@ -7,7 +7,7 @@ export default function Home() {
         <div>
             <h1>Woof OS</h1>
             <p>
-                Woof OS is a simple respin of Arch Linux with a focus on simplicity and speed. The main focus was to recreate my personal setup (only applies to the Qtile edition) in a way that is easy for install and get up and running quickly. The OS is designed to be a daily driver for those who want a system close to Arch Linux without the hassle of setting up everything from scratch.
+                Woof OS is a simple respin of Arch Linux with a focus on simplicity and speed. The main focus was to recreate my personal setup (only applies to the Qtile edition) in a way that is easy for install and get up and running quickly. The distro is designed to be a daily driver for those who want a system close to Arch Linux without the hassle of setting up everything from scratch.
             </p>
             <p>
                 The configuration files and any packages outside the Arch Linux repositories used in Woof OS are also available to install through our pacman repository. You can find the repository information on the <Link href="/pacman">pacman</Link> page.
