@@ -1,4 +1,4 @@
-"use client"
+
 
 import Home from "./sections/contentpages/home"
 

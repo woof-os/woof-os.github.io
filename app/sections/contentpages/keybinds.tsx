@@ -1,21 +1,7 @@
 import ArticleFooter from "@/app/components/articlefooter";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function Keybinds() {
-    const [ref, inView] = useInView();
-    const transition = { duration: 0.5 }
-    const variants = {
-        hidden: { opacity: 0, x: -30 },
-        visible: { opacity: 1, x: 0 }
-    }
-
-    return <motion.article
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={variants}
-        transition={transition}
-        ref={ref}
+    return <article
         className="prose max-w-none prose-slate prose-invert md:px-12">
         <h1>Keybinds for Woof OS Qtile Edition</h1>
         <p>Woof OS uses a tiling window manager, qtile, mainly controlled using the keyboard.<br /> The keybinds listed here are declared in <code>~/.config/qtile/config.py</code>.</p>
@@ -81,5 +67,5 @@ export default function Keybinds() {
                 </ul>
             </div>
         </div>
-    </motion.article>
+    </article>
 }

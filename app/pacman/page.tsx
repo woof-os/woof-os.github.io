@@ -1,4 +1,4 @@
-"use client"
+
 
 import Pacman from "../sections/contentpages/pacman";
 
