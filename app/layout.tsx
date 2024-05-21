@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"hero-bg-image " + IBMPlexMono.className}>
+      <body className={"bg-slate-900 hero-bg-image " + IBMPlexMono.className}>
         <main className="min-h-screen overflow-x-hidden">
           <Hero />
           <div className="w-full flex flex-col gap-12 items-center pt-12 pb-12 bg-slate-950 md:bg-transparent md:bg-gradient-to-b md:from-slate-950/50 md:via-slate-950 md:to-slate-950">
