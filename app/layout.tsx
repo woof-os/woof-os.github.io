@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={IBMPlexMono.className}>
-        <main className="min-h-screen bg-slate-950 overflow-x-hidden">
+        <main className="min-h-screen bg-slate-950 bg-base overflow-x-hidden">
           <Hero />
-          <div className="w-full flex flex-col gap-12 items-center pt-24 pb-12">
+          <div className="w-full flex flex-col gap-12 items-center pb-12">
             <div className="w-full max-w-screen-2xl flex-grow lg:bg-slate-900 text-slate-200">
               <Header />
               <div className={"w-full p-4 lg:p-12 " + IBMPlexSerif.className}>
