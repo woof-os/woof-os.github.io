@@ -31,6 +31,6 @@ export default function Home() {
             </ul>
 
         </div>
-        <hr /><Image src="/images/2024-01-16_23-04.png" alt="Woof OS" width={1920} height={1080} />
+        <hr /><Image src="/images/s4.png" alt="Woof OS" width={1920} height={1080} />
     </article>
 }
