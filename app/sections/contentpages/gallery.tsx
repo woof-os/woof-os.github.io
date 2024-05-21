@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 export default function Gallery() {
-    const mainImage = "/images/2024-01-16_23-04.png"
+    const mainImage = "/images/s4.png"
     const images = [
-        "/images/2024-01-16_23-01_1.png",
-        "/images/2024-01-16_23-01.png",
-        "/images/s0.png",
-        "/images/s1.png",
-        "/images/s2.png",
+        "/images/s6.png",
+        "/images/s5.png",
         "/images/s3.png",
+        "/images/s2.png",
+        "/images/s1.png",
+        "/images/s0.png",
     ]
 
     return <div
