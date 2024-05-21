@@ -5,10 +5,10 @@ export default function Gallery() {
     const images = [
         "/images/2024-01-16_23-01_1.png",
         "/images/2024-01-16_23-01.png",
-        "https://raw.githubusercontent.com/ACuteWoof/dot-files/main/docs/static/s0.png",
-        "https://raw.githubusercontent.com/ACuteWoof/dot-files/main/docs/static/s1.png",
-        "https://raw.githubusercontent.com/ACuteWoof/dot-files/main/docs/static/s2.png",
-        "https://raw.githubusercontent.com/ACuteWoof/dot-files/main/docs/static/s3.png",
+        "/images/s0.png",
+        "/images/s1.png",
+        "/images/s2.png",
+        "/images/s3.png",
     ]
 
     return <div
