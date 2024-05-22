@@ -20,4 +20,7 @@
   a:hover {
     @apply bg-slate-200 text-slate-900 decoration-slate-200;
   }
+  article {
+    @apply prose max-w-none prose-slate prose-invert md:px-12;
+  }
 }

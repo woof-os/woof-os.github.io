@@ -1,13 +1,8 @@
-import ArticleFooter from "@/app/components/articlefooter";
-
 export default function Keybinds() {
-    return <article
-        className="prose max-w-none prose-slate prose-invert md:px-12">
-        <h1>Keybinds for Woof OS Qtile Edition</h1>
+    return <section id="keybinds"><h1>Keybinds for Woof OS Qtile edition</h1>
         <p>Woof OS uses a tiling window manager, qtile, mainly controlled using the keyboard.<br /> The keybinds listed here are declared in <code>~/.config/qtile/config.py</code>.</p>
         By default, <kbd>[mod]</kbd> is the <kbd>Super</kbd>/<kbd>mod4</kbd> key, which is the <kbd>⊞ Win</kbd> key on most keyboards, and the <kbd>⌘ Command</kbd> key on Macs.
-        <hr />
-        <div className="md:grid md:grid-cols-2 md:gap-12">
+        <div className="md:grid md:grid-cols-2 md:gap-12 mt-8">
             <div>
                 <h2>Focus navigation</h2>
                 <ul>
@@ -34,7 +29,10 @@ export default function Keybinds() {
                     <li><kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>K</kbd> moves focused window <b>up</b></li>
                     <li><kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>Return</kbd> toggles between split and unsplit sides of stack</li>
                     <li><kbd>[mod]</kbd> <kbd>Tab</kbd> toggles between layouts</li>
+                    <li><kbd>[mod]</kbd> <kbd>Shift</kbd> <span>{Array.from(Array(9).keys()).map((i) => { return <span key={i}><kbd>{i + 1}</kbd>{i != 8 && "/"}</span> })}
+                    </span> shifts focused window to the workspace assigned to the ID</li>
                 </ul>
+
             </div>
             <div>
                 <h2>Window sizing</h2>
@@ -67,5 +65,5 @@ export default function Keybinds() {
                 </ul>
             </div>
         </div>
-    </article>
+    </section>
 }

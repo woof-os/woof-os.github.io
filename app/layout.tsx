@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { IBM_Plex_Serif, IBM_Plex_Mono } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
-import Hero from './sections/hero'
-import Header from './components/header'
+import Hero from './components/hero'
+import Header from './components/header/header'
 import ArticleFooter from './components/articlefooter'
 
 const IBMPlexMono = IBM_Plex_Mono({
@@ -26,6 +26,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const pages: { title: string, link?: string, subpages?: { title: string, link: string }[] }[] = [
+    { title: 'Home', link: '/' },
+    { title: 'Downloads', link: '/downloads' },
+    {
+      title: 'Editions', subpages: [
+        {
+          title: 'Qtile (xorg)', link: '/qtile',
+        },
+        {
+          title: 'Sway', link: '/sway',
+        },
+      ]
+    },
+    { title: 'Pacman', link: '/pacman' },
+  ]
+
   return (
     <html lang="en">
       <body className={"bg-slate-900 hero-bg-image " + IBMPlexMono.className}>
@@ -33,7 +50,7 @@ export default function RootLayout({
           <Hero />
           <div className="w-full flex flex-col gap-12 items-center pt-12 pb-12 bg-slate-950 md:bg-transparent md:bg-gradient-to-b md:from-slate-950/50 md:via-slate-950 md:to-slate-950">
             <div className="w-full max-w-screen-2xl flex-grow lg:bg-slate-900 text-slate-200">
-              <Header />
+              <Header items={pages} />
               <div className={"w-full p-4 lg:p-12 " + IBMPlexSerif.className}>
                 {children}
               </div>

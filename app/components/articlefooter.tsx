@@ -5,7 +5,6 @@ function ArticleFooter() {
         <div className="max-w-screen-2xl flex-grow p-4 lg:p-12 lg:bg-slate-900 text-slate-200">
             <div
                 className="prose max-w-none prose-slate prose-invert md:px-12 md:grid md:grid-cols-2">
-
                 <section id="contact">
                     <h2>Contact</h2>
                     <ul>
