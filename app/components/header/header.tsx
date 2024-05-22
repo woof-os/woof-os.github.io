@@ -11,7 +11,7 @@ export default function Header({ items }: { items: { title: string, link?: strin
                         title: item.title,
                         subpages: item.subpages
                     }} /> : item.link &&
-                    <Link target="_blank" href={item.link
+                    <Link target="_self" href={item.link
                     }>
                         {item.title}
                     </Link>
