@@ -20,7 +20,7 @@ export default function Pacman() {
                 <br />
                 Server = https://woof-os.github.io/$repo/$arch
             </pre>
-            <Link href={"https://repo.os.lewoof.xyz/"}>Browse the repository</Link>
+            <Link target="_blank" href={"https://repo.os.lewoof.xyz/"}>Browse the repository</Link>
         </div>
     </article>
 }

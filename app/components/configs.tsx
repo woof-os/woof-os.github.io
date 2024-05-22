@@ -10,7 +10,7 @@ export default function Configs({ items }: { items: { title: string, link: strin
     return <section id="configs">
         <h2>Configs</h2>
         <ul className={"md:grid md:grid-cols-2 " + mono.className}>
-            {items.map(item => <li key={item.link}><Link
+            {items.map(item => <li key={item.link}><Link target="_blank"
                 href={item.link}>{item.title}</Link></li>)}
         </ul>
     </section>

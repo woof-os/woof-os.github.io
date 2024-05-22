@@ -62,10 +62,10 @@ export default function RootLayout({
               © 2023-2024 Vithushan. All Rights Reserved.
             </span>
             <span className="flex gap-6">
-              <Link href='https://lewoof.xyz' target="_blank" className="hover:text-white">
-                ACuteWoof
+              <Link target="_blank" href='https://lewoof.xyz' className="hover:text-white">
+                Vithushan (ACuteWoof)
               </Link>
-              <Link href='https://github.com/woof-os' target="_blank" className="hover:text-white">
+              <Link target="_blank" href='https://github.com/woof-os' className="hover:text-white">
                 Github
               </Link>
             </span>

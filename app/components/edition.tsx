@@ -16,10 +16,10 @@ export default function Edition({ title, mainImage, images, configs, editionId, 
         <article>
             <h1>{title}</h1>
             <div className={"flex gap-4 " + mono.className}>
-                <Link href="#download">Download</Link>
-                <Link href="#keybinds">Keybinds</Link>
-                <Link href="#configs">Configs</Link>
-                {mainImage && images && <Link href="#gallery">Gallery</Link>}
+                <Link target="_blank" href="#download">Download</Link>
+                <Link target="_blank" href="#keybinds">Keybinds</Link>
+                <Link target="_blank" href="#configs">Configs</Link>
+                {mainImage && images && <Link target="_blank" href="#gallery">Gallery</Link>}
             </div>
             {mainImage && <><hr />
                 <Image src={mainImage} alt="main image" width={1920} height={1080} /></>}

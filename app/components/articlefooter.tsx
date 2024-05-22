@@ -10,22 +10,22 @@ function ArticleFooter() {
                     <ul>
                         <li>
                             Email:&nbsp;
-                            <Link href="mailto:sutharshanvithushan@gmail.com">
+                            <Link target="_blank" href="mailto:sutharshanvithushan@gmail.com">
                                 sutharshanvithushan@gmail.com
                             </Link>
                         </li>
                         <li>
                             Matrix:&nbsp;
-                            <Link href="https://matrix.to/#/#woof-os:matrix.org">
+                            <Link target="_blank" href="https://matrix.to/#/#woof-os:matrix.org">
                                 #woof-os:mx.lewoof.xyz
                             </Link>{" | "}
-                            <Link href="https://matrix.to/#/@acutewoof:matrix.org">
+                            <Link target="_blank" href="https://matrix.to/#/@acutewoof:matrix.org">
                                 @acutewoof:mx.lewoof.xyz
                             </Link>
                         </li>
                         <li>
                             Discord:&nbsp;
-                            <Link href="https://discord.gg/2G2yGUAXUS">
+                            <Link target="_blank" href="https://discord.gg/2G2yGUAXUS">
                                 Woof OS
                             </Link>
                         </li>
@@ -39,7 +39,7 @@ function ArticleFooter() {
                         </li>
                         <li>
                             <strong>BuyMeACoffee: </strong>
-                            <Link href="https://buymeacoffee.com/acutewoof">acutewoof</Link>
+                            <Link target="_blank" href="https://buymeacoffee.com/acutewoof">acutewoof</Link>
                         </li>
                     </ul>
                 </section>
