@@ -6,7 +6,8 @@ export default function Download({ editionId }: { editionId: string }) {
         <span className="flex flex-col gap-2 md:flex-row md:gap-12">
             <span>
                 <h2>LeWoof Mirror</h2>
-                <Link href={`https://dl.os.lewoof.xyz/${editionId}/woofos-x86_64.iso`} target="_blank">Latest release</Link>
+                <Link href={`https://dl.os.lewoof.xyz/${editionId}/woofos-x86_64${editionId === "qtile" ? "" : `-${editionId}`
+                    }.iso`} target="_blank">Latest release</Link>
                 <br />
                 <Link href={`https://dl.os.lewoof.xyz/${editionId}/`}>Browse downloads</Link>
             </span>
