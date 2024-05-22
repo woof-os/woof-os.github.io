@@ -8,7 +8,7 @@ export default function Qtile() {
             link: "https://github.com/woof-os/iso-profile-sway"
         },
         {
-            title: "sway",
+            title: "sway & waybar",
             link: "https://github.com/woof-os/sway-waybar-akirapearl"
         },
         {
