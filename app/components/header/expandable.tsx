@@ -12,7 +12,7 @@ export default function Expandable({ item }: { item: { title: string, subpages: 
 
         <div className={"bg-slate-950 md:bg-slate-900 w-full absolute top-10 left-0 right-0 flex justify-center py-4 gap-8 " + (expanded ? "block" : "hidden")}>
             {item.subpages.map((subpage, i) =>
-                <Link key={i} href={subpage.link} >{subpage.title}</Link>
+                <Link onClick={() => {setExpanded(!expanded)}} key={i} href={subpage.link} >{subpage.title}</Link>
             )}
         </div>
     </div>
