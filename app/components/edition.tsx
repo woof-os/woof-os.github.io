@@ -19,7 +19,7 @@ export default function Edition({ title, mainImage, images, configs, editionId, 
                 <Link target="_self" href="#download">Download</Link>
                 <Link target="_self" href="#keybinds">Keybinds</Link>
                 <Link target="_self" href="#configs">Configs</Link>
-                {mainImage && images && <Link target="_blank" href="#gallery">Gallery</Link>}
+                {mainImage && images && <Link target="_self" href="#gallery">Gallery</Link>}
             </div>
             {mainImage && <><hr />
                 <Image src={mainImage} alt="main image" width={1920} height={1080} /></>}
