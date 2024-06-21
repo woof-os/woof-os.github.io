@@ -15,10 +15,10 @@
     font-family: monospace !important;
   }
   a {
-    @apply leading-none underline-offset-2 transition-all duration-150 ease-in-out;
+    @apply leading-none underline-offset-2 transition-colors duration-150 ease-in-out;
   }
   a:hover {
-    @apply bg-slate-200 text-slate-900 decoration-slate-200;
+    @apply bg-slate-200 text-slate-900 decoration-slate-200 italic;
   }
   article {
     @apply prose max-w-none prose-slate prose-invert md:px-12;
