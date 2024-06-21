@@ -1,47 +1,53 @@
-import type { Metadata } from 'next'
-import { IBM_Plex_Serif, IBM_Plex_Mono } from 'next/font/google'
-import './globals.css'
-import Link from 'next/link'
-import Hero from './components/hero'
-import Header from './components/header/header'
-import ArticleFooter from './components/articlefooter'
+import type { Metadata } from "next";
+import { IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google";
+import "./globals.css";
+import Link from "next/link";
+import Hero from "./components/hero";
+import Header from "./components/header/header";
+import ArticleFooter from "./components/articlefooter";
 
 const IBMPlexMono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['400'],
-})
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const IBMPlexSerif = IBM_Plex_Serif({
-  subsets: ['latin'],
-  weight: ['400'],
-})
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
-  title: 'Woof OS',
-  description: 'A simple Arch respin by ACuteWoof.',
-}
+  title: "Woof OS",
+  description: "A simple Arch respin by ACuteWoof.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-
-  const pages: { title: string, link?: string, subpages?: { title: string, link: string }[] }[] = [
-    { title: 'Home', link: '/' },
-    { title: 'Downloads', link: '/downloads' },
+  const pages: {
+    title: string;
+    link?: string;
+    subpages?: { title: string; link: string }[];
+  }[] = [
+    { title: "Home", link: "/" },
+    { title: "Downloads", link: "/downloads" },
     {
-      title: 'Editions', subpages: [
+      title: "Editions",
+      subpages: [
         {
-          title: 'Qtile (xorg)', link: '/qtile',
+          title: "Qtile (xorg)",
+          link: "/qtile",
         },
         {
-          title: 'Sway', link: '/sway',
+          title: "Sway",
+          link: "/sway",
         },
-      ]
+      ],
     },
-    { title: 'Pacman', link: '/pacman' },
-  ]
+    { title: "Pacman", link: "/pacman" },
+  ];
 
   return (
     <html lang="en">
@@ -57,15 +63,20 @@ export default function RootLayout({
             </div>
             <ArticleFooter />
           </div>
-          <footer className={'bg-slate-950 p-4 md:flex md:items-center md:justify-between text-slate-400 md:p-6 text-sm ' + IBMPlexMono.className}>
-            <span className='sm:text-center'>
+          <footer
+            className={
+              "bg-slate-950 p-4 md:flex md:items-center md:justify-between text-slate-400 md:p-6 text-sm " +
+              IBMPlexMono.className
+            }
+          >
+            <span className="sm:text-center">
               © 2023-2024 Vithushan. All Rights Reserved.
             </span>
             <span className="flex gap-6">
-              <Link target="_blank" href='https://lewoof.xyz' className="hover:text-white">
+              <Link target="_blank" href="https://lewoof.xyz">
                 Vithushan (ACuteWoof)
               </Link>
-              <Link target="_blank" href='https://github.com/woof-os' className="hover:text-white">
+              <Link target="_blank" href="https://github.com/woof-os">
                 Github
               </Link>
             </span>
@@ -73,5 +84,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }
