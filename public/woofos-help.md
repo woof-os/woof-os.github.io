@@ -62,12 +62,9 @@ the keybinds listed below.
 
 #### Miscellaneous and launching programs
 * `[mod] + Return` launches the terminal (default is alacritty).
-
 * `[mod] + r` opens the Rofi run launcher (this allows you to launch applications by name).
-* `[mod] + p` opens the Rofi power menu (for accessing computer power options).
 * `[mod] + b` launches the web browser (defualt is Firefox).
 * `[mod] + c` launches the file manager (default is Vifm).
-
 * `[mod] + z` opens a copied PDF URL in Zanthura.
 * `[mod] + y` opens a copied YouTube URL in MPV (using yt-dlp).
 * `[mod] + f` opens the Flameshot GUI.
@@ -76,6 +73,7 @@ the keybinds listed below.
 * `[mod] + v` shows the active windows through Rofi.
 * `[mod] + d` sends a notification including the current date and time.
 * `[mod] + q` kills focused window.
+* `[mod] + CTRL + p` opens the Rofi power menu (for accessing computer power options).
 * `[mod] + CTRL + r` restarts Qtile.
 * `[mod] + CTRL + q` shuts down Qtile (**Does not turn off the computer**).
 
