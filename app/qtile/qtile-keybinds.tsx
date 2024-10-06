@@ -132,9 +132,6 @@ export default function Keybinds() {
               <kbd>[mod]</kbd> <kbd>R</kbd> opens the Rofi run launcher
             </li>
             <li>
-              <kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>P</kbd> opens the Rofi power menu
-            </li>
-            <li>
               <kbd>[mod]</kbd> <kbd>B</kbd> launches the web browser (brave)
             </li>
             <li>
@@ -166,6 +163,9 @@ export default function Keybinds() {
             </li>
             <li>
               <kbd>[mod]</kbd> <kbd>Q</kbd> kills focused window
+            </li>
+            <li>
+              <kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>P</kbd> opens the Rofi power menu
             </li>
             <li>
               <kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>R</kbd> restarts Qtile
