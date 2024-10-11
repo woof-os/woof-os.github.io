@@ -35,6 +35,12 @@ function ArticleFooter() {
           <h2>Donate</h2>
           <ul>
             <li>
+              <strong>Solana: </strong>
+              <span className="text-wrap break-all">
+                6BecuGmLuD7JJEbQuV7mNqUNZ3i8WPxNC5zL63oAhRJH
+              </span>
+            </li>
+            <li>
               <strong>Monero: </strong>
               <span className="text-wrap break-all">
                 88Ftpu3ncRyLv7Z2c14b9L4MsyWscEqLBJhENxviYtmtRfidDx6G9y3Xyd8aYF8NRV2c2dF5QZiyTfHwuWLH9qmsSpskLhj
